@@ -26,7 +26,9 @@ function App() {
           </div>
         </ul>
         <button>Compute</button>
-        <p>Total Price: </p>
+        <div className='priceBlock'>
+          <p>Total Price: </p> <p className='total'></p>
+        </div>
       </div>
     </div>
   );

@@ -35,3 +35,24 @@ li {
   border: 2px solid gray;
   text-align: end;
 }
+
+.priceBlock{
+  display: flex;
+  justify-content: end ;
+  align-items: center;
+}
+
+.total {
+  width: 44px;
+  height: 26px;
+  border-radius: 5px;
+  border: 2px solid gray;
+  text-align: end;
+  margin: 0 15px;
+}
+
+button {
+  border-radius: 10px;
+  border: 2px solid gray;
+  height: 28px;
+}
