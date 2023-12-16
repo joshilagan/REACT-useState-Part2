@@ -10,12 +10,28 @@ body{
   border: 8px solid brown;
   border-radius: 10px;
   width: 450px;
+  padding: 10px;
 }
 
 ul {
   text-align: start;
+  padding-right: 15px;
 }
 
 li {
   padding-bottom: 5px;
+}
+
+.liBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.listInput {
+  width: 40px;
+  height: 24px;
+  border-radius: 5px;
+  border: 2px solid gray;
+  text-align: end;
 }
