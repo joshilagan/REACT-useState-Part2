@@ -2,10 +2,20 @@
   text-align: center;
 }
 
-
 body{
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.groceryCard {
+  border: 8px solid brown;
+  border-radius: 10px;
+  width: 450px;
+}
 
+ul {
+  text-align: start;
+}
 
+li {
+  padding-bottom: 5px;
+}
