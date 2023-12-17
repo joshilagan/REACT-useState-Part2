@@ -57,7 +57,7 @@ function App() {
           </div>
         </ul>
         <button onClick={() => {
-          setTotal(parseInt(item1) + parseInt(item2) + parseInt(item3) + parseInt(item4) + parseInt(item5) + parseInt(item6))
+          setTotal(parseFloat(item1) + parseFloat(item2) + parseFloat(item3) + parseFloat(item4) + parseFloat(item5) + parseFloat(item6))
         }}>Compute</button>
         <div className='priceBlock'>
           <p>Total Price: </p> <p className='total'>{total}</p>
