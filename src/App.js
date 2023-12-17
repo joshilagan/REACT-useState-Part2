@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 
 function App() {
+  //declare the variables using useState
     const [item1, setItem1] = useState(0);
     const [item2, setItem2] = useState(0);
     const [item3, setItem3] = useState(0);
@@ -38,7 +39,9 @@ function App() {
         <h1>My Grocery list</h1>
         <ul>
           <div className='liBlock'>
-            <li>16 oz 90% lean ground beef, Lean  </li> <input type="text" className='listInput' onChange={handleItem1Change}/>
+            <li>16 oz 90% lean ground beef, Lean  </li> 
+            {/* use onChange event handler to get the inputs */}
+            <input type="text" className='listInput' onChange={handleItem1Change}/>
           </div>
           <div className='liBlock'>
             <li>1/2 cup Onion</li><input type="text" className='listInput' onChange={handleItem2Change}/>
@@ -57,9 +60,12 @@ function App() {
           </div>
         </ul>
         <button onClick={() => {
+          //use parseFloat() to convert the variables into integer with decimals
           setTotal(parseFloat(item1) + parseFloat(item2) + parseFloat(item3) + parseFloat(item4) + parseFloat(item5) + parseFloat(item6))
         }}>Compute</button>
+
         <div className='priceBlock'>
+          {/* display the total but chain it with toFixed(2) so that the total will be rounded off to 2 decimal places only */}
           <p>Total Price: </p> <p className='total'>{total.toFixed(2)}</p>
         </div>
       </div>
