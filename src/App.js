@@ -9,10 +9,12 @@ function App() {
     const [item4, setItem4] = useState(0);
     const [item5, setItem5] = useState(0);
     const [item6, setItem6] = useState(0);
+    const [total, setTotal] = useState(0)
     
 
     const handleItem1Change = (item) => {
       setItem1(item.target.value)
+
     }
     const handleItem2Change = (item) => {
       setItem2(item.target.value)
@@ -29,8 +31,6 @@ function App() {
     const handleItem6Change = (item) => {
       setItem6(item.target.value)
     }
-
-    const total = item1 + item2 + item3 + item4 + item5 +item6;
 
   return (
     <div className="App">
@@ -56,7 +56,9 @@ function App() {
             <li>1/2 tsp Salt</li><input type="text" className='listInput' onChange={handleItem6Change}/>
           </div>
         </ul>
-        <button>Compute</button>
+        <button onClick={() => {
+          setTotal(parseInt(item1) + parseInt(item2) + parseInt(item3) + parseInt(item4) + parseInt(item5) + parseInt(item6))
+        }}>Compute</button>
         <div className='priceBlock'>
           <p>Total Price: </p> <p className='total'>{total}</p>
         </div>
