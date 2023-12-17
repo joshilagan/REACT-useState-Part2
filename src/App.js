@@ -60,7 +60,7 @@ function App() {
           setTotal(parseFloat(item1) + parseFloat(item2) + parseFloat(item3) + parseFloat(item4) + parseFloat(item5) + parseFloat(item6))
         }}>Compute</button>
         <div className='priceBlock'>
-          <p>Total Price: </p> <p className='total'>{total}</p>
+          <p>Total Price: </p> <p className='total'>{total.toFixed(2)}</p>
         </div>
       </div>
     </div>
