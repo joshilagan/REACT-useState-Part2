@@ -60,7 +60,7 @@ function App() {
           </div>
         </ul>
         <button onClick={() => {
-          //use parseFloat() to convert the variables into integer with decimals
+          //use parseFloat() to convert the variables into integer with decimals because the value from onChange is a string
           setTotal(parseFloat(item1) + parseFloat(item2) + parseFloat(item3) + parseFloat(item4) + parseFloat(item5) + parseFloat(item6))
         }}>Compute</button>
 
